@@ -1,0 +1,3 @@
+ADICIONANDO UM ARQUIVO NÃO MONITORADA
+
+git add nome_do_arquivo

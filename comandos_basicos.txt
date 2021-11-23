@@ -124,6 +124,12 @@ NÃO EXISTIAM
 # O seu programa atual continuará existindo no último commit realizado, para voltar basta utilizar o comando
 git checkout master
 # Você pode utilizar normalmente o programa e depois salvar em um novo branch
+
+OUTRA UTILIZAÇÃO CHECKOUT
+checkout pode ser utilizado para desfazer alterações incorretas antes do commit
+Exemplo: Adicionou alguma linha que causou bug, utilize o comando
+git checkout nome_do_arquivo.ext
+para retornar ele ao estado do commit anterior
 ------------------------------------------------------------------------------------------------------
 
 # Renomear um arquivo via GIT
@@ -191,4 +197,18 @@ git commit --amend -m "Novo texto"
 ATENÇÃO
 Se estiver feito novas alterações após o commit 'errado' e utilizar a flag --amend, vai unir as alteração no commit anterior
 # Pode ser usado para fazer esse tipo de correção também
+------------------------------------------------------------------------------------
+|---------|
+| RESTORE |
+|---------|
+
+FLAGS
+--staged
+# Comando para mover o arquivo do status 'tracked' para 'untracked'
+# Utilizar antes do commit
+Ex:
+git restore --staged nome_do_arquivo.ext
+
+# NOTA
+Se utilizar o restore em um arquivo que não foi add, ele vai discartar as alterações realizadas
 

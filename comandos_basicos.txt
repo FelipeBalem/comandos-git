@@ -8,6 +8,10 @@ git add nome_do_arquivo
  arquivos monitorados ficam verdes
  arquivos não monitorados ficam vermelhos
 
+
+podemos utilizar
+git add *.tipoarquivo para add todos os arquivos do mesmo tipo
+
 ------------------------------------------------------------
 
 COMMIT

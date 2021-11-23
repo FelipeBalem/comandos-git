@@ -124,3 +124,56 @@ NÃO EXISTIAM
 # O seu programa atual continuará existindo no último commit realizado, para voltar basta utilizar o comando
 git checkout master
 # Você pode utilizar normalmente o programa e depois salvar em um novo branch
+------------------------------------------------------------------------------------------------------
+
+# Renomear um arquivo via GIT
+|-------|
+|   mv  |
+|-------|
+
+git mv nomeantigo.ext nomenovo.ext
+
+# Renomear pelo git da menos trabalho pois ele percebe que o arquivo foi renomeado e continua no status tracked, então
+# basta apenas dar o commit
+# Renomear por outro meio marca o nome antigo como arquivo deletado e cria um novo com o novo nome
+# então devemos adicionar os 2 via git add e depois dar o commit
+# OBS: Sim, deve adicionar o arquivo deletado novamente para que ele marque no projeto como deletado
+
+
+# Deletar arquivo do projeto
+
+|-------|
+|   rm  |
+|-------|
+git rm nomedoarquivo.ext
+Após deletar, pode dar commit
+# Se deletar fora do git, deve dar add e depois commit
+--------------------------------------------------------------------------------------------
+
+COMANDO PARA COMPARAR ALTERAÇÕES
+|-------------|
+|     diff    |
+|-------------|
+
+git diff <hash id>
+# Compara o 'agora' com o commit inserido em <hash id>. Ex:
+git diff 2f896fa
+
+git diff <hash id_maisantigo>..<hashid_maisnovo>
+# Compara 2 commits
+NOTA: a ordem é importante, sempre insira o mais antigo (mais abaixo na lista do git log) com um mais atual. Ex:
+
+git diff 2f896fa..master
+
+#OBS: os 2 pontos seguidos significa "até"
+
+
+FLAGS
+|-------------|
+|  --staged   |
+|-------------|
+
+# Mostra a diferença entre o último commit e a versão adicionada (add) atual (ANTES DO NOVO COMMIT)
+git diff --staged
+
+# Ele deixa em verde o que foi inserido e em vermelho o que foi apagado

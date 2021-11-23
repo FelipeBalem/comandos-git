@@ -15,3 +15,11 @@ git config --global user.email "felipe.balem.si@gmail.com"
 Utilize local se estiver em um computador público
 Utilize global se estiver no seu computador pessoal
 ------------------------------------------------------------------
+
+# CONFIGURAÇÃO DE MOSTRAGEM DO LOG
+
+git config core.pager cat # Mostra todo o log
+git config core.pager less # Mostra o que cabe no terminal
+
+# OBS: Podemos utilizar a flag --global aqui também
+---------------------------------------------------------------------

@@ -11,7 +11,7 @@ git add nome_do_arquivo
 
 podemos utilizar
 git add *.tipoarquivo para add todos os arquivos do mesmo tipo
-
+git add .  # para add TODOS os arquivos
 ------------------------------------------------------------
 
 COMMIT
@@ -20,3 +20,34 @@ COMMIT
 o status de stagged (prontos para o envio para o branch (galho) principal do projeto)
 comando:
 git commit -m "mensagem"  # vai fazer o commit de todos os arquivos tracked
+[master 4581394] adicionado teste_commit para verificação de hash
+-------| ----- | ----------------------------------------------|
+branch   hash id   mensagem
+
+# O commit cria um snapshot do sistema, salvando uma "imagem" de como ele estava naquele momento
+
+----------------------------------------------------------------------------------------
+
+Para verificar o log, utilize o comando
+git log
+
+Resultado:
+                                                   Indica qual foi o último commit
+                                                |---------------|
+#commit 45813943cb0a9d636403b9e157e90bbd22d5b25b (HEAD -> master)
+#Author: Felipe Balem <felipe.balem.si@gmail.com>
+#Date:   Mon Nov 22 21:43:04 2021 -0400
+#
+#    adicionado teste_commit para verificação de hash
+#
+#commit 4d03a0f0e49d120e59a29ecaa75cf0ff38c75df6
+#:
+
+Caso a lista de commit não caiba no terminal, ele vai mostrar : (como acima)
+Comando uteis dentro do log
+    /<busca> vai procurar nas mensagens dos commits o texto de <busca>. Ex:
+    /teste
+
+    q -> quit
+    b -> voltar para outra palavra encontrada
+

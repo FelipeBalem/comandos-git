@@ -212,3 +212,15 @@ git restore --staged nome_do_arquivo.ext
 # NOTA
 Se utilizar o restore em um arquivo que não foi add, ele vai discartar as alterações realizadas
 
+-----------------------------------------------------
+|-----------|
+|   reset   |
+|-----------|
+
+# COMANDO utilizado para retornar ao estado do commit HEAD TODOS os arquivos
+# Utilize a flag --hard para simbolizar "sobreescreva se necessário"
+git reset HEAD --hard
+
+# Adicionar o ^ após o HEAD apaga esse commit e retornar para o anterior a ele
+git resrt HEAD^ --hard
+

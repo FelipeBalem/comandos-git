@@ -177,3 +177,18 @@ FLAGS
 git diff --staged
 
 # Ele deixa em verde o que foi inserido e em vermelho o que foi apagado
+
+------------------------------------------------------------------------------------------------
+Desfazendo coisas
+
+|----------|
+| --amend  |
+|----------|
+
+# Caso tenha escrito uma mensagem errada no commit e deseje alterar, faça um novo commit e utilize a flag
+git commit --amend -m "Novo texto"
+
+ATENÇÃO
+Se estiver feito novas alterações após o commit 'errado' e utilizar a flag --amend, vai unir as alteração no commit anterior
+# Pode ser usado para fazer esse tipo de correção também
+

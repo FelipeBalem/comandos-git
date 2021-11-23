@@ -1,0 +1,17 @@
+# Configurando usuário no repositório
+# abra o terminal
+FAÇA ESSA CONFIGURAÇÃO ASSIM QUE CRIAR CADA REPOSITÓRIO
+
+# CONFIGURAÇÃO LOCAL
+git config user.name "Felipe"  # Esse é o NOME DA PESSOA, NÃO O LOGIN
+git config user.email "felipe.balem.si@gmail.com"  # observe que é passado como string
+
+# PARA NÃO TER QUE FAZER ISSO A CADA PROJETO, DEVEMOS CRIAR UMA CONFIGURAÇÃO GLOBAL
+basta adicionar a flag --global entre config e o comando. Ex:
+git config --global user.name "Felipe"
+git config --global user.email "felipe.balem.si@gmail.com"
+
+# Quando utilizar global ou local
+Utilize local se estiver em um computador público
+Utilize global se estiver no seu computador pessoal
+------------------------------------------------------------------

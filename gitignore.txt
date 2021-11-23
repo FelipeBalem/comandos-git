@@ -1,0 +1,24 @@
+#.gitignore
+É um arquivo que marca o que deve ser excluido do controle do git
+# NÃO APAGAR, configure
+
+# Crie o .gitignore
+basta adicionar o nome do arquivo ou diretório que quer ignorar
+exemplo
+
+#arquivo
+basico.txt
+
+#diretorio
+diretorio/
+
+# Se for oculto, adicione o . antes
+.idea/
+ou adicione ** (assim ignora até subdiretórios)
+
+# Pode ignorar qualquer tipo de arquivo substituindo com * no lugar do nome
+*.sqlite3
+
+# vai ignorar todos arquivos do tipo sqlite3
+
+# Podemos utilizar o .gitignore dentro de .idea/ ou podemos simplesmente criar um na raiz do projeto

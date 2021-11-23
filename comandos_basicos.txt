@@ -1,3 +1,18 @@
 ADICIONANDO UM ARQUIVO NÃO MONITORADA
+GIT ADD
 
 git add nome_do_arquivo
+
+# NO pycharm:
+ arquivos ignorados ficam amarelos
+ arquivos monitorados ficam verdes
+ arquivos não monitorados ficam vermelhos
+
+------------------------------------------------------------
+
+COMMIT
+
+# O commit é utilizado para fazer o envio/submissão de arquivos que estão sendo rastreados (tracked) para
+o status de stagged (prontos para o envio para o branch (galho) principal do projeto)
+comando:
+git commit -m "mensagem"  # vai fazer o commit de todos os arquivos tracked

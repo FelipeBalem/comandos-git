@@ -1,0 +1,25 @@
+# Um projeto ao ser criado ainda não está sendo gerenciado pelo git
+# para fazer isso, utilize o terminal da IDE, se estiver dentro da ambiente virtual, s
+aia e navegue até a pasta do projeto (deactivate)
+# Utilize o comando
+git init
+# este comando vai inicializar o git neste projeto
+# mensagem de sucesso: Initialized empty Git repository in /home/felipe/PycharmProjects/git/.git/
+# note que ele criou uma pasta oculta para criar o repositório vazio
+# note que o diretório git não aparece, pois vem oculto e não precisamos mexer nele
+
+
+# comando que exibe um resumo do git
+git status
+-----------
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/
+        basico.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+-----------

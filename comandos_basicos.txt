@@ -29,8 +29,9 @@ branch   hash id   mensagem
 ----------------------------------------------------------------------------------------
 
 Para verificar o log, utilize o comando
-git log
-
+|-------|
+|git log|
+|-------|
 Resultado:
                                                    Indica qual foi o último commit
                                                 |---------------|
@@ -51,3 +52,75 @@ Comando uteis dentro do log
     q -> quit
     b -> voltar para outra palavra encontrada
 
+#FLAGS PARA GIT LOG
+
+# adicione ao final do comando git log --flag
+
+--oneline  -> Retorna os commits de forma resumida (apenas uma linha). Ex:
+git log --oneline
+
+#2f896fa (HEAD -> master) Modificações em config e comandos_basicos
+#4581394 adicionado teste_commit para verificação de hash
+#4d03a0f modificado o .gitignore
+|------|
+| -<n> | -> Retorna o(s) n commits mais recentes. Ex:
+|------|
+git log -1
+
+#PODEMOS CONCATENAR AS FLAGS
+git log --oneline -2  -> Retorna os 2 últimos commits de forma resumida
+
+
+#Podemos pesquisar por datas
+--before="YYYY-MM-DD"  -> Pesquisa antes da data especificada
+--after="YYYY-MM-DD"  -> Pesquisa após a data especificada
+--since="1 day ago"  -> Pode colocar month, year, hour, minute
+
+
+#OBS: Pode utilizar a escrita no after e before
+#OBS2: concatene garoto! vai funcionar "-1; -2; etc"
+
+
+# Podemos buscar por autor
+--author="Nome"
+
+# Pode informar só o primeiro nome, não precisa ser o nome completo
+
+# Podemos buscar por parte da mensagem
+--grep="Mensagem"
+
+# Retorna apenas os commits que possuem essa parte informada na mensagem
+
+------------------------------------------------------------------------------
+# Navegando entre os snapshots
+|-----------|
+|  checkout |
+|-----------|
+
+git checkout <hash id>  # pode ser só os 7 primeiros caracteres. Ex:
+git checkout 4581394
+ Resultado:
+# Note: switching to '2f896fa'.
+#
+#You are in 'detached HEAD' state. You can look around, make experimental
+#changes and commit them, and you can discard any commits you make in this
+#state without impacting any branches by switching back to a branch.
+#
+#If you want to create a new branch to retain commits you create, you may
+#do so (now or later) by using -c with the switch command. Example:
+#
+#  git switch -c <new-branch-name>
+#
+#Or undo this operation with:
+#
+#  git switch -
+#
+#Turn off this advice by setting config variable advice.detachedHead to false
+#
+#HEAD is now at 2f896fa Modificações em config e comandos_basicos
+
+# ATENÇÃO, AO VOLTAR PARA UM HASH ID, SEU PROGRAMA IRÁ VOLTAR TOTALMENTE AQUELE MOMENTO, ATÉ EXCLUINDO ARQUIVOS QUE
+NÃO EXISTIAM
+# O seu programa atual continuará existindo no último commit realizado, para voltar basta utilizar o comando
+git checkout master
+# Você pode utilizar normalmente o programa e depois salvar em um novo branch

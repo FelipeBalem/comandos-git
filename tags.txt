@@ -1,0 +1,19 @@
+TAGS
+Tags marcam um estado do repositório, podemos marcar um estado de "pronto para testes" por exemplo
+Ou até uma release como 1.0
+
+|--------------------|
+|  git tag nome_tag  |
+|--------------------|
+
+git tag v1.0
+
+Se digitar apenas git tag ele vai listar as tags
+NOTA: se estiver em equipe, após alguém marcar a tag, tem que dar o push
+NOTA2: o comando muda para levar a tag
+
+git push origin v1.0
+
+OBS: Após criar a tag, é possível acessá-la com checkout nome_tag, entretanto não é possível dar commits
+
+Após fazer a tag, é possível baixar uma versão zip da tag

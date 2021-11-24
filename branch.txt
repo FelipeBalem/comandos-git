@@ -1,0 +1,11 @@
+BRANCH
+Um branch nada mais é do que uma ramificação do projeto
+Um projeto contém o Branch Master, ou seja, ramoprincipal, a partir dele podemos acrescentar outros
+branchs, para testar funcionalidades diferentes por exemplo, sem alterar o projeto de forma imediata
+Na prática o GIT cria uma cópia do branch master até aquele momento e o desenvolvedor faz alterações nessa
+cópia que é um branch
+O ponto em comum entre os branchs se chama 'base'
+
+                            Base-------> branch funcionalidadeB
+-----\---------------------/------------->branch master
+      Base--->branch funcionalidadeA

@@ -16,4 +16,26 @@ Para mudar de branch,
 |  checkout  |
 |------------|
 
-git checkout nomebranch
+git checkout branchteste  #Utilize o código ;)
+
+
+FLAGS
+
+Deletar branch
+|------------|
+| branch -d  |
+|------------|
+
+git branch -d nome_do_branch
+
+#OBS: Caso o branch não tenha fundido (merged) com o branch principal, ele vai dar uma mensagem de alerta e não vai deletar
+Para informar que tem certeza em deletar, utilize -D
+
+git branch -D nome_do_branch
+
+Criar e trocar de branch com um código
+|-----------|
+| switch -c |
+|-----------|
+
+git switch -c nome_do_branch

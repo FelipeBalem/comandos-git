@@ -1,0 +1,9 @@
+MERGE
+|-----------------|
+|    git merge    |
+|-----------------|
+
+Merge é utilizado para unir 2 branchs
+
+Vá para o branch master e utilize o comando
+git merge nome_do_branch

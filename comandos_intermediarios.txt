@@ -33,9 +33,74 @@ Para informar que tem certeza em deletar, utilize -D
 
 git branch -D nome_do_branch
 
+----------------------------------------------------------------------------------
 Criar e trocar de branch com um código
-|-----------|
-| switch -c |
-|-----------|
+|----------------------------|
+| checkout -b nome_do_branch |
+|----------------------------|
 
-git switch -c nome_do_branch
+git checkout -b nome_do_branch
+
+------------------------------------------------------------------------
+Unir 2 branchs
+
+|--------------------------|
+| git merge nome_do_branch |
+|--------------------------|
+
+NOTA: Lembre-se de estar no master antes de dar o merge
+Após dar merge, o branch continua existindo, delete-o se não for mais implementar
+ATENÇÃO: O MERGE vai inserir o novo branch na linha do tempo após o último commit
+
+REBASE
+|---------------------------|
+| git rebase nome_do_branch |
+|---------------------------|
+
+O REBASE vai retirar temporariamente o branch principal e vai inserir TODO o branch a partir da base
+depois vai inserir os commits do branch master por cima
+Útil após baixar os arquivos do repositório central (fetch)
+
+-------------------------------------------------------------------------------------------
+
+CLONE
+
+|------------------------------|
+|  git clone localrepositorio  |
+|------------------------------|
+
+Este comando criará um clone do repositório original e manterá uma linha de comunicação para realizar o push futuramente
+Alterações realizadas no clone não alteram o master antes do push
+Indicado para trabalho em equipe
+NOTA: Lembre-se de criar o usuário do novo coloborador (veja inicializando)
+NOTA2: Não clonará arquivos ignorados
+
+--------------------------------------------------------------------------
+PUSH
+
+|-----------------|
+|    git push     |
+|-----------------|
+
+Este comando envia os comandos do repositório clonado para o master
+ATENÇÃO: é necesário dar a permissão de bare repositório no repositório central
+
+
+-----------------------------------------------------------------------------
+FETCH
+|-------------|
+|  git fetch  |
+|-------------|
+-Baixa os arquivos do repositório central mas não faz um merge
+Após baixar, utilizar o rebase
+NOTA: não é necessário colocar o nome do repositório pois ele já sabe de onde está clonando
+-------------------------------------------------------------------------------
+
+PULL
+|-------------|
+|  git pull   |
+|-------------|
+-Baixa os arquivos e já faz o rebase automaticamente
+NOTA: não é necessário colocar o nome do repositório pois ele já sabe de onde está clonando
+NOTA2: ele abre o editor de texto visual, modifique a mensagem, ctrl O para salvar e ctrl W para sair
+-------------------------------------------------------------------------------

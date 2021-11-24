@@ -1,0 +1,13 @@
+BARE REPOSITORY
+
+O github é um exemplo
+O bare repository é o repositório central
+Para fazer na sua máquina pessoal
+Crie uma pasta (adicione bare ao final do nome)
+Acesse ela e de o comando init com a flag --bare
+
+git init --bare
+
+Após criar o bare, é possível fazer o clone dela com
+git clone caminho/do/bare
+e fazer o push após as modificações

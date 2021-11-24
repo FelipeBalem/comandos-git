@@ -92,7 +92,7 @@ git log --oneline -2  -> Retorna os 2 últimos commits de forma resumida
 # Retorna apenas os commits que possuem essa parte informada na mensagem
 
 ------------------------------------------------------------------------------
-# Navegando entre os snapshots
+# Navegando entre os snapshots     #OBS: checkout também navega entre os branchs, observe comandos_intermediarios.txt
 |-----------|
 |  checkout |
 |-----------|

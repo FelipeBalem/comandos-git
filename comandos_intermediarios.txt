@@ -1,0 +1,19 @@
+Comandos para controles de branchs
+|------------|
+| git branch |
+|------------|
+Mostra os branchs do projeto
+O git marcara com um asterisco qual o branch você está trabalhando atualmente
+
+# Adicionando um novo branch
+
+git branch nome_do_branch
+
+NOTA: crie nomes sugestivos para o branch, que seja fácil saber pra quer serve aquele branch
+
+Para mudar de branch,
+|------------|
+|  checkout  |
+|------------|
+
+git checkout nomebranch

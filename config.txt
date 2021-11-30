@@ -23,3 +23,10 @@ git config core.pager less # Mostra o que cabe no terminal
 
 # OBS: Podemos utilizar a flag --global aqui também
 ---------------------------------------------------------------------
+
+# CONFIGURAÇÃO DE CREDENCIAIS
+# Armazenamento (para não pedir o token o tempo todo)
+
+git config credential.helper store
+
+--------------------------------------------------------------------

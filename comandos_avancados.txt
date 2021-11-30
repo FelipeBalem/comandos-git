@@ -1,0 +1,11 @@
+|-------------|
+|    remote   |
+|-------------|
+
+Remote é utilizado para inserir comandos relacionados com repositórios remotos
+# No caso como estou utilizando o github o remote vai mostrar informações deste repositório
+
+git remote -v
+origin  https://github.com/FelipeBalem/git.git (fetch)
+origin  https://github.com/FelipeBalem/git.git (push)
+
